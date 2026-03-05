@@ -1,34 +1,16 @@
 {
-  "name": "iot_express_firestore",
-  "version": "0.3.0",
-  "description": "IoT Express Firestore Heroku",
-  "engines": {
-    "node": "8.9.1"
-  },
-  "main": "index.js",
+  "name": "backend",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "start": "node index.js",
-    "test": "node test.js"
+    "start": "node ./bin/www"
   },
   "dependencies": {
-    "body-parser": "^1.18.3",
-    "cors": "^2.8.4",
-    "ejs": "^2.5.6",
-    "express": "^4.15.2",
-    "firebase": "^5.5.1"
-  },
-  "devDependencies": {
-    "request": "^2.81.0",
-    "tape": "^4.7.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/heroku/node-js-getting-started"
-  },
-  "keywords": [
-    "node",
-    "heroku",
-    "express"
-  ],
-  "license": "MIT"
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "jade": "~1.11.0",
+    "morgan": "~1.9.1"
+  }
 }

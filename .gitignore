@@ -21,10 +21,14 @@ Thumbs.db
 *.swp
 *.swo
 
-# Firebase
+# Firebase Config & Keys
 firebase-debug.log
 .firebase/
 firebaseServiceAccountKey.json
+fire.js
+
+# Uploads
+uploads/
 
 # Build output
 dist/
@@ -36,3 +40,6 @@ coverage/
 # Misc
 *.tmp
 *.bak
+
+# Archivos de ejemplo o temporales del proyecto
+ejemploProfe.js
