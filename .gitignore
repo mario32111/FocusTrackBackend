@@ -24,7 +24,7 @@ Thumbs.db
 # Firebase Config & Keys
 firebase-debug.log
 .firebase/
-firebaseServiceAccountKey.json
+serviceAccountKey.json
 fire.js
 
 # Uploads

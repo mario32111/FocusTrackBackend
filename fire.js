@@ -1,16 +1,13 @@
-var firebase = require('firebase')
-// datos de firebase
-var config = {
+const admin = require('firebase-admin');
 
-  apiKey: "",
-  authDomain: "",
-  databaseURL: "",
-  projectId: "",
-  storageBucket: "",
-  messagingSenderId: "",
-  appId: "",
-  measurementId: ""
-};
+// Inicializa Firebase Admin con las credenciales del servicio (service account)
+const serviceAccount = require('./serviceAccountKey.json');
 
-const fire = firebase.initializeApp(config);
-module.exports = fire;
+admin.initializeApp({
+  credential: admin.credential.cert(serviceAccount),
+});
+
+const db = admin.firestore();
+const auth = admin.auth();
+
+module.exports = { admin, db, auth };
